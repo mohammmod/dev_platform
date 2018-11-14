@@ -1,2 +1,14 @@
 # dev_platform
-this is just a platform for developer to create their tutorials and show the teacher in them
+
+- this is just a platform for developer to create their tutorials and show the teacher in them
+
+## prupose :
+
+- allow the developer to create a tutorials to share there experience and have fun 
+
+## technologies used:
+
+- java 11
+- spring boot 2.2
+- angular
+- mysql
