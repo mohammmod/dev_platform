@@ -8,7 +8,11 @@
 
 ## technologies used:
 
-- java 11
+- jshipster
+- java 8.1
 - spring boot 2.2
-- angular
+- angular 6
+- docker
+- swager 
+- sonar
 - mysql

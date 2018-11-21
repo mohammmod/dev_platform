@@ -49,7 +49,7 @@ To launch your application's tests, run:
     ./mvnw clean test
 ### Other tests
 
-Performance tests are run by [Gatling][] and written in Scala. They're located in [src/test/gatling](src/test/gatling).
+Performance tests are run by [Gatling][] and written in Scala. They're located in [src/test/gatling](../src/test/gatling).
 
 To use those tests, you must install Gatling from [https://gatling.io/](https://gatling.io/).
 
@@ -73,7 +73,7 @@ For more information, refer to the [Code quality page][].
 
 ## Using Docker to simplify development (optional)
 
-You can use Docker to improve your JHipster development experience. A number of docker-compose configuration are available in the [src/main/docker](src/main/docker) folder to launch required third party services.
+You can use Docker to improve your JHipster development experience. A number of docker-compose configuration are available in the [src/main/docker](../src/main/docker) folder to launch required third party services.
 
 For example, to start a mysql database in a docker container, run:
 
