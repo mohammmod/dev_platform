@@ -1,0 +1,25 @@
+include ../views/index.pug
+
+.main
+   
+    br
+    select.form-select(aria-label='Default select example')
+        option(selected='' value='0') select number of keys
+        each variable, index in keys
+            option(value=variable.index) #{variable}
+    br
+    p choose the color of the warning:
+    br
+    button.btn.btn-danger(type='button',id='red') red
+    button.btn.btn-warning(type='button',id='yellow') yellow
+    br
+    p when did the symptoms started:
+    select.form-select(aria-label='Default select example')
+        option(selected='' value='0') Today
+        each variable, index in days
+            option(value=variable.index) #{variable}
+    br
+    p Upload keys:
+
+    input#input-b2.file(name='input-b2' type='file' data-show-preview='false')
+    button.btn.btn-primary(type='button',onclick='doSomething()' ) Upload Keys

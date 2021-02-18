@@ -1,0 +1,44 @@
+include ../views/index.pug
+
+
+.main
+  br
+  button.btn.btn-primary(type='button',onclick='doSomething()' ) Downlaod Keys
+  script. 
+    function doSomething() {
+        const button = document.getElementById('myButton');
+        console.log('button was clicked');
+        
+
+    }
+  br 
+  br
+  select.form-select(aria-label='Default select example')
+    option(selected='' value='0') select Batch
+    each variable in batchtags
+        option(value=variable.batch_tag) #{variable.batch_tag}
+  br
+  
+  table.table.table-striped
+  
+    tr
+      th(scope='col') counter
+      th(scope='col') batch_tag
+      th(scope='col') Keys
+    tbody
+    each variable,index in batchtags 
+        
+        tr
+            th(scope='row') #{index}
+            td #{variable.batch_tag}
+            td #{variable.exposure_key}
+     
+
+  
+    
+    
+    
+
+
+
+
