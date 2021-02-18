@@ -8,7 +8,7 @@
 
 ## technologies used:
 
-- jshipster
+- jshipsterdd
 - java 8.1
 - spring boot 2.2
 - angular 6
