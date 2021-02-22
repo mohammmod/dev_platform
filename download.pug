@@ -1,0 +1,26 @@
+include ../views/index.pug
+
+
+.main
+  br
+  form(action="/downloadbatch")
+    button.btn.btn-primary(type="submit") Downlaod Keys
+    br 
+    br
+    select.form-select(aria-label='Default select example', name='dropDown')
+      option(selected='' value='0') select Batch
+      each variable in batchtags
+          option(value=variable.batch_tag) #{variable.batch_tag}
+    br
+  
+ 
+     
+
+  
+    
+    
+    
+
+
+
+

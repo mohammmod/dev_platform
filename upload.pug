@@ -1,0 +1,29 @@
+include ../views/index.pug
+
+.main
+    form(action="/uploaded")
+    
+        select.form-select(aria-label='Default select example', name='keys_number' )
+            option(selected='' value='0') select number of keys
+            each variable, index in keys
+                option(value=variable.index) #{variable}
+        
+        p choose the color of the warning:
+      
+        input(type="checkbox",name="red") 
+        p  red
+       
+        input(type="checkbox",name="yellow")
+        p  yellow 
+        
+        p when did the symptoms started:
+        select.form-select(aria-label='Default select example', name= 'days')
+            option(selected='' value='0') Today
+            each variable, index in days
+                option(value=variable.index) #{variable}
+        
+        p Upload keys:
+
+        
+        button.btn.btn-primary(type='submit') Upload Keys
+

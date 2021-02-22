@@ -1,0 +1,12 @@
+include ../views/index.pug
+table.table.table-striped
+    tr
+      th(scope='col') counter
+      th(scope='col') batch_tag
+      th(scope='col') Keys
+    tbody
+    each variable,index in batchtags 
+      tr
+        th(scope='row') #{index}
+        td #{variable.batch_tag}
+        td #{variable.exposure_key}
